@@ -1,0 +1,24 @@
+p{
+	text-align: justify;
+	font-family: 'PT Sans', sans-serif;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+	text-align: center;
+}
+
+nav ul li a{
+	color: #00838f;
+}
+
+nav {
+	background: white;
+	align-content: center;
+}
