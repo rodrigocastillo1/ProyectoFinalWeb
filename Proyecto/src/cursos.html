@@ -48,290 +48,352 @@
   <p>{{search}}</p>
   </div>
 
-       <div class="row">
-       <div class="col s12 m4" ng-repeat="n in movie.Python | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Python.jpg"  width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              
-              <span>{{n.Python}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
+<div class="row">
 
-          <div class="col s12 m4" ng-repeat="n in movie.PHP | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/php.jpg"  width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.PHP}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-           <div class="col s12 m4" ng-repeat="n in movie.redes | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Redes.jpg" alt="imagen"  width="240" height="590">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.redes}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-           <div class="col s12 m4" ng-repeat="n in movie.C2 | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Cs.jpg" alt="imagen"  width="240" height="590">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.C2}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
 
-           <div class="col s12 m4" ng-repeat="n in movie.C | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/C.jpg" alt="imagen"  width="240" height="590">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              
-              <span>{{n.C}}</span>
+<div class="col s12 m4" ng-repeat="n in movie.Python | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="../img/Python.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Python}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Python}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
 
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-           <div class="col s12 m4" ng-repeat="n in movie.Java | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Java.jpg" alt="imagen"  width="240" height="590">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Java}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
+   <div class="col s12 m4" ng-repeat="n in movie.PHP | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/php.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.PHP}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.PHP}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
 
-          <div class="col s12 m4" ng-repeat="n in movie.Matlab | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Matlab.jpg" alt="imagen"  width="240" height="590">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Matlab}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-          <div class="col s12 m4" ng-repeat="n in movie.Laravel | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Laravel.jpg" alt="imagen"  width="240" height="590">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Laravel}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-           <div class="col s12 m4" ng-repeat="n in movie.ios | filter: search">
-          <div class="card">
-            <div class="card-image">
-             <img src="../img/ios.jpg" alt="imagen"  width="240" height="590">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.ios}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
 
-          <div class="col s12 m4" ng-repeat="n in movie.Android | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Android.jpg"  width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Android}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-           <div class="col s12 m4" ng-repeat="n in movie.IA | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/IA.jpg" alt="imagen"  width="240" height="590" >
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.IA}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-           <div class="col s12 m4" ng-repeat="n in movie.ras | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Raspberry.jpg"  width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.ras}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
+   <div class="col s12 m4" ng-repeat="n in movie.redes | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Redes.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.redes}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.redes}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+
+   <div class="col s12 m4" ng-repeat="n in movie.C2 | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Cs.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.C2}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.C2}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+         
+
+         <div class="col s12 m4" ng-repeat="n in movie.C | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/C.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.C}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.C}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+
+   <div class="col s12 m4" ng-repeat="n in movie.Java | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Java.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Java}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Java}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div> 
           
-           <div class="col s12 m4" ng-repeat="n in movie.Emsamblado | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Emsamblado.jpg"  width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Emsamblado}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
+
+           
+           <div class="col s12 m4" ng-repeat="n in movie.Matlab | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Matlab.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Matlab}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Matlab}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+
+   <div class="col s12 m4" ng-repeat="n in movie.Laravel | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Laravel.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Laravel}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Laravel}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+
+         
+          <div class="col s12 m4" ng-repeat="n in movie.ios | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/ios.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.ios}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.ios}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+           <div class="col s12 m4" ng-repeat="n in movie.Android | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Android.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Android}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Android}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+
+         
+<div class="col s12 m4" ng-repeat="n in movie.IA | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/IA.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.IA}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.IA}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+
+<div class="col s12 m4" ng-repeat="n in movie.ras | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Raspberry.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.ras}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.ras}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+           
+          <div class="col s12 m4" ng-repeat="n in movie.Emsamblado | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Emsamblado.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Emsamblado}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Emsamblado}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
           <div class="col s12 m4" ng-repeat="n in movie.Di | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/DiseñoWeb.jpg" alt="imagen"  width="240" height="590">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Di}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-        <div class="col s12 m4" ng-repeat="n in movie.C1 | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/C++.jpg"  width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.C1}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-           <div class="col s12 m4" ng-repeat="n in movie.Arduino | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Arduino.jpg"  width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Arduino}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-           <div class="col s12 m4" ng-repeat="n in movie.Bases | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Basesdedatos.jpg"  width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Bases}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/DiseñoWeb.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Di}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Di}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+           
+<div class="col s12 m4" ng-repeat="n in movie.C1 | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/C++.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.C1}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.C1}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
          
-       <div class="col s12 m4" ng-repeat="n in movie.Linux | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Linux.jpg"   width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Linux}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-           <div class="col s12 m4" ng-repeat="n in movie.Introduccion | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/introduccion.jpg"   width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Introduccion}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
+
+        <div class="col s12 m4" ng-repeat="n in movie.Arduino | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Arduino.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Arduino}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Arduino}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+
+    <div class="col s12 m4" ng-repeat="n in movie.Bases | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Basesdedatos.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Bases}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Bases}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+<div class="col s12 m4" ng-repeat="n in movie.Linux | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Linux.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Linux}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Linux}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+
+   <div class="col s12 m4" ng-repeat="n in movie.Introduccion | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/introduccion.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Introduccion}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Introduccion}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+          
+         
+      
            <div class="col s12 m4" ng-repeat="n in movie.Computacion | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Forense.jpg"  width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Computacion}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
-          <div class="col s12 m4" ng-repeat="n in movie.Fortran | filter: search">
-          <div class="card">
-            <div class="card-image">
-              <img src="../img/Fortran.jpg"  width="240" height="590" alt="imagen">
-              <span class="card-title"> Tarjeta con imagen</span>
-            </div>
-             <div class="card-content"></div>
-              <span>{{n.Fortran}}</span>
-              <div class="card-action">
-              <a href="#"> Soy un link</a>
-            </div>
-            </div>
-          </div>
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Forense.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Computacion}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Computacion}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
+
+<div class="col s12 m4" ng-repeat="n in movie.Fortran | filter: search">
+<div class="card" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="../img/Fortran.jpg"  width="240" height="590" alt="imagen">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><span>{{n.Fortran}}</span><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><span>{{n.Fortran}}</span><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+   </div>
          
+          
        </div>
       </main>
 
