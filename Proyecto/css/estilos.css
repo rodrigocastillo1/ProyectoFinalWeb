@@ -1,12 +1,37 @@
-p{
+p {
 	text-align: justify;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Abel', sans-serif;
+}
+
+p.tam-aviso {
+	font-size: 85%;
+}
+
+p.tam-foot {
+	font-size: 95%;
+}
+
+a.proy-style{
+	font-family: 'Abel', sans-serif;
+}
+
+h5.text-pcolor {
+	color: #00838f;
+}
+
+h5 {
+	font-family: 'Abel', sans-serif;
+}
+
+font.text-pcolor {
+	color: #00838f;
 }
 
 body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	background-color: #F6F4F1;
 }
 
 main {
@@ -20,5 +45,13 @@ nav ul li a{
 
 nav {
 	background: white;
-	align-content: center;
 }
+
+i.icon-blue {
+    color: #00838f;
+}
+
+p{
+	text-align: justify;
+}
+
