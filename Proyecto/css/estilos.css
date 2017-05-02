@@ -51,7 +51,14 @@ i.icon-blue {
     color: #00838f;
 }
 
-p{
-	text-align: justify;
+span.proy-format{
+	font-size: 105%;
+	font-family: 'Abel', sans-serif;
+	color: #00838f;
+}
+
+div.question-style{
+	font-size: 105%;
+	font-family: 'Abel', sans-serif;
 }
 
