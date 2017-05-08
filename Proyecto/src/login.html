@@ -5,7 +5,7 @@
 	<title>PROTECO</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="icon" type="image/png" href="../img/logo.png">
+	<link rel="icon" type="image/png" href="../img/pro.png">
 	<link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 	<!--link rel="stylesheet" type="text/css" href="../css/animate.css"-->
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
@@ -51,70 +51,60 @@
     </div>
     <div class="row container">
       
-      <div>
-        <div class="col s12 m6 l6">
+        <div class="col s12 m4 l3">
           <div class="card small">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="active responsive-img" src="../img/google_logo.png"  width="50" height="50" alt="Entrar con Google">
+              <img class="active responsive-img" src="../img/google_logo.png">
             </div>
             <div class="card-content center">
-            	<button id="btn-gmail">
-                <a class="waves-effect waves-light btn">Entrar</a>
-             </button>
+            	<!--button id="btn-gmail"-->
+                <a class="waves-effect waves-light btn" onclick="return LoginGmail();">Google</a>
+             <!--/button-->
             </div>
           </div>
         </div>
-      </div>
 
 
-      <div>
-        <div class="col s12 m6 l6">
-          <div class="card medium">
+        <div class="col s12 m4 l3">
+          <div class="card small">
             <div class="card-image waves-effect waves-block waves-light">
-              <img src="../img/facebook_logo.png" class="responsive-img" width="240" height="280">
+              <img src="../img/facebook_logo.png" class="active responsive-img">
             </div>
-            <div class="card-action center">
-              <button id="btn-facebook">
-                <a class="waves-effect waves-light btn">Entrar</a>
-              </button>
+            <div class="card-content center">
+              <!--button id="btn-facebook"-->
+                <a class="waves-effect waves-light btn" onclick="return LoginFacebook();">Facebook</a>
+              <!--/button-->
             </div>
           </div>
         </div>
-      </div>
 
 
-      <div>
-        <div class="col s12 m6 l6">
-          <div class="card medium">
+        <div class="col s12 m4 l3">
+          <div class="card small">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="responsive-img" width="150" height="150" src="../img/twitter_logo.png">
+              <img class="active responsive-img" src="../img/twitter_logo.png">
             </div>
-            <div class="card-action center">
-              <button id="btn-twitter">
-                <a class="waves-effect waves-light btn">Entrar</a>
-              </button>
+            <div class="card-content center">
+              <!--button id="btn-twitter"-->
+                <a class="waves-effect waves-light btn" onclick="return LoginTwitter();">Twitter</a>
+              <!--/button-->
             </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div class="col s12 m6 l6">
-          <div class="card medium">
+        <div class="col s12 m4 l3">
+          <div class="card small">
             <div class="card-image waves-effect waves-block waves-light">
-              <img src="../img/github_logo.png" class="responsive-img" width="240" height="280">
+              <img src="../img/github_logo.png" class="active responsive-img">
             </div>
-            <div class="card-action center">
-              <button id="btn-github">
-                <a class="waves-effect waves-light btn">Entrar</a>
-              </button>
+            <div class="card-content center">
+              <a class="waves-effect waves-light btn" onclick="return LoginGitHub();">Github</a>
             </div>
           </div>
         </div>
-      </div>
-		</main>
 
-	</div>
+  	</div>
+  </main>
 
 	 <footer class="page-footer grey lighten-3">
 	  <div class="container">
@@ -154,5 +144,8 @@
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
 <script src="../js/FireLog.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript">
+  
+</script>
 
 </html>

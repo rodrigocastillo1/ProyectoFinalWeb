@@ -8,6 +8,10 @@ var config = {
 };
 firebase.initializeApp(config);
 
+function redireccionar(){
+    location.href="../src/bienvenida.html";
+} 
+
 function LoginGmail(){
   if(!firebase.auth().currentUser){
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -17,6 +21,7 @@ function LoginGmail(){
       var user = result.user;
       var name = result.user.displayName;
       alert("Inició sesión como: "+name);
+      setTimeout ("redireccionar()", 1000);
       //Mostrar nombre de usuario
       //$('#page').css('display', 'none') && $('#page2').css('display', 'block');
       //document.querySelector('span.mdl-layout-title').textContent = 'Bienvenido ' + name;
@@ -44,6 +49,7 @@ function LoginFacebook(){
       var user = result.user;
       var name = result.user.displayName;
       alert("Inició sesión como: "+name);
+      setTimeout ("redireccionar()", 1000);
       //Mostrar nombre de usuario
       //$('#page').css('display', 'none') && $('#page2').css('display', 'block');
       //document.querySelector('span.mdl-layout-title').textContent = 'Bienvenido ' + name;
@@ -71,6 +77,7 @@ function LoginTwitter(){
       var user = result.user;
       var name = result.user.displayName;
       alert("Inició sesión como: "+name);
+      setTimeout ("redireccionar()", 1000);
       //Mostrar nombre de usuario
       //$('#page').css('display', 'none') && $('#page2').css('display', 'block');
       //document.querySelector('span.mdl-layout-title').textContent = 'Bienvenido ' + name;
@@ -92,12 +99,13 @@ function LoginTwitter(){
 function LoginGitHub(){
   if(!firebase.auth().currentUser){
     var provider = new firebase.auth.GithubAuthProvider();
-    provider.addScope('user:email');
+    provider.addScope('repo');
     firebase.auth().signInWithPopup(provider).then (function(result){
       var token = result.credential.accesstoken;
       var user = result.user;
       var name = result.user.displayName;
       alert("Inició sesión como: "+name);
+      setTimeout ("redireccionar()", 1000);
       //Mostrar nombre de usuario
       //$('#page').css('display', 'none') && $('#page2').css('display', 'block');
       //document.querySelector('span.mdl-layout-title').textContent = 'Bienvenido ' + name;
