@@ -9,7 +9,7 @@ var config = {
 firebase.initializeApp(config);
 
 function redireccionar(){
-    location.href="../src/bienvenida.html";
+    location.href="https://www.protecoregion5.esy.es";
 } 
 
 function LoginGmail(){
